@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file:///D:/mobile/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action" id="for">
+        <h1>Result Card Generator</h1>
+        <section id="section1">
+            <div class="alldiv">
+                <h4>Institute info:</h4>
+                <label for="Division">Division</label>
+                <input type="text" id="Division" placeholder="Enter Division"><br>
+                <label for="board">Board</label>
+                <select name="board" id="board">
+                    <option >MATRIC</option>
+                    <option >INTERMEDIATE</option>
+                </select><br><br>
+                <label for="Year">Year</label>
+                <input type="text" id="Year" placeholder="Enter Year"><br>
+                <label for="group">Group:</label>
+                <input type="text" id="group" placeholder="Enter your Group"><br>
+                <label for="school">Institution:</label>
+                <input type="text" id="school" placeholder="Enter your Institute Name"><br>
+                <button id="button1">Submit</button>
+            </div>
+            <div class="alldiv">
+                <h4>Candidate info:</h4>
+                <label for="name">candidate Name:</label>
+                <input type="text" id="name" placeholder="Enter your Name"><br>
+                <label for="Fname">Father Name:</label>
+                <input type="text" id="fname" placeholder="Enter your Father Name"><br>
+                <label for="rollno">Roll No:</label>
+                <input type="text" id="rollno" placeholder="Enter your Roll No"><br>
+                <label for="Enroll">Enrolment No:</label>
+                <input type="text" id="Enroll" placeholder="Enter your Enroll no"><br>
+                <button id="button2">Submit</button>
+            </div>
+            <div class="alldiv">
+                <h4>Subject info:</h4>
+                <label for="sub">Subject</label>
+                <input type="text" id="sub" placeholder="Enter Subject Name"><br>
+                <label for="marks">Maximum Marks</label>
+                <input type="text" id="marks" placeholder="Enter Maximum Marks"><br>
+                <label for="P1">Part-I</label>
+                <input type="text" id="p1" placeholder="Enter Marks"><br>
+                <label for="p2">Part-II</label>
+                <input type="text" id="p2" placeholder="Enter Marks"><br>
+                <button id="button3" onclick="display()">Submit</button>
+            </div>
+        </section>
+        <section id="section2">
+            <p class="b">Board of Intermediate & Secondary Education, <span id="tDivision"></span></p>
+            <p><b>PROVISIONAL RESULT INTIMATION</b></p>
+            <p><span id="tboard"></span> EXAMINATION ,<span id="tyear"></span></p>
+            <img src="" alt="">
+            <div id="div2">
+                <p class="a">Roll No:  <span id="trollno"></span></p>
+                <p class="a" id="g">Group:  <span id="tgroup"></span></p>
+                <p class="a">Candidate's Name: <span id="tname"></span></p>
+                <p class="a">Father Name:  <span id="tfname"></span></p>
+                <p class="a">Enrollment No:   <span id="tEnroll"></span></p>
+                <p class="a">Institution: <span id="tschool"></span></p>
+            </div>
+            <table>
+                <tr>
+                    <th rowspan="2" id="srno">Sr.</th>
+                    <th rowspan="2">Name of Subject</th>
+                    <th rowspan="2">Maximum Marks</th>
+                    <th colspan="3">Detail of Marks Obtained</th>
+                    <th rowspan="2">Percentile Scroe</th>
+                    <th rowspan="2" id="total">Grade</th>
+                </tr>
+                <tr>
+                    <th>Part-I</th>
+                    <th>Part-II</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+    </section>
+</form>
+<script src="file:///D:/mobile/script.js"></script>
+</body>
+</html>
